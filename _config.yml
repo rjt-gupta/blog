@@ -1,0 +1,51 @@
+title: z3ta
+author: Rajat Gupta
+email: rajat.gupta99924@gmail.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Impossible happens all the time! It just takes to believe in it..
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
+
+  disqus:
+    shortname: z3ta
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://twitter.com/z3ta_rjt
+      icon: twitter-square
+      color: cyan
+    - url: https://www.linkedin.com/in/rjt-gupta/
+      icon: linkedin-square
+      color: blue
+    - url: https://github.com/rjt-gupta
+      icon: github-square
+      color: purple
+
+  show_author: true
+
+# Build settings
+theme: jekyll-dash
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll/tagging
+
+# Replaces the default avatar provider (gravatar)
+avatar_source: github
+github_username: rjt-gupta
