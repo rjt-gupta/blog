@@ -9,8 +9,8 @@ script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
 deploy:
   repo: rjt-gupta/rjt-gupta.github.io
-  provider: pages
   local-dir: ./site
+  provider: pages
   target-branch: master
   email: deploy@travis-ci.org
   name: Deployment Bot
